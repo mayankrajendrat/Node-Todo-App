@@ -11,9 +11,11 @@ const todoRoutes = require("./routes/Todo");
 
 const app = express();
 
+
+const uri = "mongodb+srv://mayankrajendrat:1122334455@cluster0.gjy2keg.mongodb.net/?retryWrites=true&w=majority";
 // DB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/todoapp", {
+  .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
