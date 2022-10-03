@@ -11,8 +11,8 @@ const todoRoutes = require("./routes/Todo");
 
 const app = express();
 
-
-const uri = "mongodb+srv://mayankrajendrat:1122334455@cluster0.gjy2keg.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI;
+//const uri = "mongodb+srv://mayankrajendrat:1122334455@cluster0.gjy2keg.mongodb.net/?retryWrites=true&w=majority";
 // DB connection
 mongoose
   .connect(uri, {
