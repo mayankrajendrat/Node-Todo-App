@@ -4,6 +4,7 @@
   "description": "todo rest apis",
   "main": "index.js",
   "scripts": {
+    "build": "npm i && npm build"
     "start": "nodemon index.js"
   },
   "author": "shubham",
